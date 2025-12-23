@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #111;
+}
+
+/* Full viewport container */
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #999;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.navbar a.active {
+  color: #000;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+/* Centered content */
+.center-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Avatar */
+.avatar img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Text block */
+.text-block {
+  max-width: 500px;
+}
+
+.text-block h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-block p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.text-block button {
+  padding: 14px 28px;
+  border: 2px solid #000;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.text-block button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Scroll top icon */
+.scroll-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.up-icon {
+  width: 28px;
+  height: 28px;
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+
+.up-icon:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .center-content {
+    flex-direction: column;
+  }
+
+  .text-block h1 {
+    font-size: 36px;
+  }
+
+  .text-block p {
+    font-size: 16px;
+  }
+
+  .avatar img {
+    width: 200px;
+  }
+}
